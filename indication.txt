@@ -1,0 +1,2 @@
+openssl genpkey -algorithm RSA -out user1_private.pem -pkeyopt rsa_keygen_bits:2048
+openssl rsa -pubout -in user1_private.pem -out user1_public.pem
