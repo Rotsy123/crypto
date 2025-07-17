@@ -1,0 +1,14 @@
+Pourquoi la clé privée doit-elle rester secrète ?
+La clé privée permet :
+
+de signer des messages : donc quelqu’un pourrait signer à ta place (vol d’identité)
+
+de déchiffrer des messages chiffrés avec la clé publique : donc on pourrait lire des infos confidentielles
+
+Si quelqu’un obtient ta clé privée :
+
+Il peut lire les messages chiffrés
+
+Il peut se faire passer pour toi
+
+Il compromet tout ton système de sécurité

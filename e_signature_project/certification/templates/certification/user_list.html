@@ -1,0 +1,14 @@
+<h2>Liste des utilisateurs enregistrés</h2>
+
+<table>
+    <tr>
+        <th>Nom d'utilisateur</th>
+        <th>Clé publique</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.username }}</td>
+        <td><pre>{{ user.public_key }}</pre></td>
+    </tr>
+    {% endfor %}
+</table>

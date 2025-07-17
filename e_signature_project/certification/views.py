@@ -19,3 +19,9 @@ def register_user(request):
 
     # sinon, on affiche la page normalement
     return render(request, 'certification/register.html')
+
+
+def get_registered_user(request):
+    if request.method == 'GET':
+        users = RegisteredUser.objects.all()
+        return render(request, 'certification/user_list.html', {'users': users})
