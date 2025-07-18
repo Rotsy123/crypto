@@ -12,3 +12,18 @@ Il peut lire les messages chiffrés
 Il peut se faire passer pour toi
 
 Il compromet tout ton système de sécurité
+
+
+
+
+
+Quelles seraient les bonnes pratiques pour ce registre dans un système réel?
+Vérifier que la clé est bien une clé publique valide (format PEM, longueur, type).
+Utiliser une base de données sécurisée ou un fichier avec des droits d’accès restreints.
+
+Que faudrait-il ajouter pour éviter cette attaque? Réponse attendue : « certicats numériques signés par une autorité de conance »
+
+Dans cette attaque, le registre (fichier JSON) peut être modifié par un attaquant pour remplacer la clé publique d’un utilisateur par la sienne. Cela permet à l’attaquant de faire croire qu’il est cet utilisateur.
+
+👉 Un certificat numérique associe l’identité d’un utilisateur à sa vraie clé publique, et il est signé par une Autorité de Certification (CA).
+ Il faudrait utiliser des certificats numériques signés par une autorité de confiance (Autorité de Certification, ou CA).
